@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e2e; /* Dark background color */
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e0e0e0; /* Light text for readability */
+}
+
+.container {
+  background: #2c2c3c; /* Slightly lighter dark background for the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  padding: 30px;
+  width: 100%;
+  max-width: 400px; /* Limit width for better readability */
+  text-align: center; /* Center content inside */
+}
+
+input {
+  padding: 15px;
+  border-radius: 5px; /* Slightly rounded input corners */
+  border: 1px solid #555; /* Subtle border for contrast */
+  outline: none;
+  background: #3a3a4a; /* Dark input background */
+  color: #e0e0e0; /* Light input text */
+  width: calc(100% - 30px); /* Full width inside container */
+  margin-bottom: 10px; /* Spacing below input */
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #888; /* Placeholder color */
+}
+
+button {
+  border-radius: 25px; /* Rounded button */
+  background: #6b4fdb; /* Vibrant purple color */
+  padding: 10px 20px;
+  border: none;
+  color: #fff; /* White text for contrast */
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+button:hover {
+  background: #5a3dbf; /* Darker purple on hover */
+  transform: scale(1.05); /* Slight pop effect on hover */
+}
+
+.todos-list {
+  margin-top: 20px;
+}
+
+.todo {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3a3a4a; /* Slightly lighter dark background for todos */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: #e0e0e0; /* Light text */
+}
+
+.close {
+  padding: 5px 10px;
+  background: #e53e3e; /* Bright red color for delete button */
+  color: #fff; /* White text for contrast */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close:hover {
+  background: #c53030; /* Darker red on hover */
+  transform: scale(1.1); /* Slight pop effect on hover */
+}
+
+h1{
+  margin-bottom: 20px;
+}
