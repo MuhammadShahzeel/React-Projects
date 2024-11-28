@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #000;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.container .number {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.btns-container {
+  width: 40rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+/* General Button Styling */
+button {
+  background-color: #1a1a1a; /* Dark background */
+  color: #ffffff; /* White text color */
+  border: 2px solid #333; /* Subtle border for depth */
+  border-radius: 15px; /* Rounded rectangle */
+  width: 120px; /* Wider for better visibility */
+  height: 50px; /* Adjusted height */
+  font-size: 1.5rem; /* Text size */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Pointer on hover */
+  transition: all 0.3s ease; /* Smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add depth */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center text inside the button */
+}
+
+/* Hover Effect */
+button:hover {
+  background-color: #333; /* Slightly lighter background on hover */
+  color: #ffcc00; /* Accent color for text */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); /* Enhance shadow */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Reset Button Styling */
+button#reset {
+  background-color: #222; /* Different background for reset button */
+  color: #ffffff;
+  border: 2px solid #444;
+  border-radius: 25px; /* More rounded for distinction */
+  width: 150px; /* Wider button for text */
+  height: 60px; /* Taller for a bold appearance */
+  padding: 0; /* Reset padding for uniformity */
+  font-size: 1.3rem; /* Adjust text size */
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button#reset:hover {
+  background-color: #555;
+  color: #00ffcc; /* Highlight for reset button */
+  transform: scale(1.08); /* Slight hover effect for reset */
+}
+
+/* Button Shapes for Increment/Decrement */
+button#increment, button#decrement {
+  background-color: #1e1e1e;
+  border-radius: 50%; /* Circular buttons */
+  width: 70px; /* Smaller size for increment/decrement */
+  height: 70px;
+  font-size: 2rem; /* Larger font for symbols */
+}
+
+button#increment:hover,
+button#decrement:hover {
+  background-color: #444; /* Highlight hover effect */
+  color: #ff6600; /* Accent hover color */
+  transform: scale(1.1); /* Slight scaling */
+}
+
+/* Center Reset Button in the Layout */
+#reset-container {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
